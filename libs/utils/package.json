@@ -1,5 +1,5 @@
 {
-    "name": "@book-library/database",
+    "name": "@book-library/utils",
     "version": "0.0.1",
     "private": true,
     "main": "./dist/index.js",
@@ -15,11 +15,6 @@
         }
     },
     "dependencies": {
-        "tslib": "^2.3.0",
-        "pg": "^8.16.3",
-        "@book-library/utils": "0.0.1",
-        "graphile-config": "^1.0.0-rc.2",
-        "postgraphile": "^5.0.0-rc.3",
-        "@graphile/simplify-inflection": "^8.0.0-rc.2"
+        "tslib": "^2.3.0"
     }
 }
