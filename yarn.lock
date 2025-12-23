@@ -1381,6 +1381,19 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@book-library/database@workspace:libs/database"
   dependencies:
+    "@book-library/utils": "npm:0.0.1"
+    "@graphile/simplify-inflection": "npm:^8.0.0-rc.2"
+    graphile-config: "npm:^1.0.0-rc.2"
+    pg: "npm:^8.16.3"
+    postgraphile: "npm:^5.0.0-rc.3"
+    tslib: "npm:^2.3.0"
+  languageName: unknown
+  linkType: soft
+
+"@book-library/gql-schema@workspace:libs/gql-schema":
+  version: 0.0.0-use.local
+  resolution: "@book-library/gql-schema@workspace:libs/gql-schema"
+  dependencies:
     tslib: "npm:^2.3.0"
   languageName: unknown
   linkType: soft
@@ -1439,10 +1452,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@book-library/utils@workspace:libs/utils":
+"@book-library/utils@npm:0.0.1, @book-library/utils@workspace:libs/utils":
   version: 0.0.0-use.local
   resolution: "@book-library/utils@workspace:libs/utils"
   dependencies:
+    pino: "npm:^10.1.0"
+    pino-http: "npm:^11.0.0"
     tslib: "npm:^2.3.0"
   languageName: unknown
   linkType: soft

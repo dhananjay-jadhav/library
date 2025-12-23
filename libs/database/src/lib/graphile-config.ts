@@ -43,7 +43,7 @@ export const preset: GraphileConfig.Preset = {
     },
     schema: {
         // Schema export for tooling (development only)
-        exportSchemaSDLPath: isDev ? './schema.graphql' : undefined,
+        exportSchemaSDLPath: isDev ? './libs/gql-schema/src/lib/schema.graphql' : undefined,
         sortExport: true,
     },
 };

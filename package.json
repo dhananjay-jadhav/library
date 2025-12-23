@@ -68,7 +68,8 @@
         "apps/*",
         "libs/database",
         "utils",
-        "libs/utils"
+        "libs/utils",
+        "libs/gql-schema"
     ],
     "packageManager": "yarn@4.12.0"
 }

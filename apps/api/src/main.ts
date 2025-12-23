@@ -63,7 +63,7 @@ async function startServer(): Promise<void> {
 
         // Graceful shutdown
         const shutdown = (signal: string): void => {
-            console.log(`\n${signal} received.  Shutting down gracefully...`);
+            logger.info(`\n${signal} received.  Shutting down gracefully...`);
 
             server.close(async () => {
                 logger.info('HTTP server closed');

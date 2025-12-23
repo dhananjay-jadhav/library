@@ -1,0 +1,12 @@
+services:
+    postgres:
+        image: postgres:latest
+        container_name: postgres
+        ports:
+            - 5432:5432
+        volumes:
+            - ./pg_hba.conf:/etc/postgresql/pg_hba.conf
+        environment:
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: password
+            POSTGRES_DB: book_library
